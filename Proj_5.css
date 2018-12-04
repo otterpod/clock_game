@@ -9,6 +9,14 @@ body {
   font-weight: bold;
 }
 
+#stats
+{
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 .header {
   width: 30%;
   margin: 50px auto 0px;
@@ -69,10 +77,22 @@ form, .content {
 {
 	color: red;
 	text-align: center;
+	font-size: 30px;
 }
 
 #buttons
 {
+	margin-left: 35%;
+	margin-right: 35%;
+	text-align: center;
+}
+
+#output
+{
+	height: 30px;
+	width: 30%;
+	padding: 10px 10px 10px 10px;
+	font-size: 16px;
 	margin-left: 35%;
 	margin-right: 35%;
 	text-align: center;
