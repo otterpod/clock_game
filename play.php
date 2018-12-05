@@ -27,13 +27,13 @@
 			<input name = "guess" type = "number" step = "1" min = "0" pattern = "\d+"/> <!--javascript-->
 		</div>
 		<div id = "buttons">
-			<button class = "btn" id = "enter">ENTER</button> <button class = "btn" id = "replay">PLAY AGAIN</button>
+			<button class = "btn" id = "enter">ENTER</button> <button class = "btn" id = "replay" onclick = "location.href = 'play.php'">PLAY AGAIN</button>
 		</div>
 		<div id = "output">
 			<textarea id = "outputBox" type = "text" readonly></textarea>
 		</div>
 		<div id = "buttons">
-			<button class = "btn" onclick = "location.href = 'stats.html'" type = "button">GO TO STATS</button>
+			<button class = "btn" onclick = "location.href = 'stats.php'" type = "button">GO TO STATS</button>
 		</div>
 		
 	</body>
