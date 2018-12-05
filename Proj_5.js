@@ -2,26 +2,37 @@
 	 Project 5
 	 Clock Game
 	 12/06/18 */
+var secLeft;
+var intervalID;
 	 
-window.onload;
-
-
-var timer = 30;
-var elem = document.getElementById('timer');
-
-var timeID = setInterval(countDown, 1000);
+window.onload = function()
+{
+	//it's as empty as the void in our hearts
+	
+};
+	
+function startClock()
+{
+	secLeft = 30;
+	var intervalID = setInterval(countDown, 1000);
+	
+	countDown();
+}
 	
 function countDown()
 {
-	if(timer == 0)
+	var elem = document.getElementById('timer');
+	
+	if(secLeft == -1)
 	{
-		clearTimeout(timeID);
 		alert("Time is out! Game over!");
+		clearTimeout(intervalID);	
 	}
 	
 	else
 	{
-		elem.innerHTML = timer + ' seconds left!';
-		timer--;
+		elem.innerHTML = secLeft + ' seconds left!';
+		secLeft--;
 	}
+
 }
