@@ -8,6 +8,7 @@
 	<header>
 		<title>Let's Play the Clock Game!</title>
 		<link rel = "stylesheet" type = "text/css" href = "Proj_5.css">
+		<script src = "Proj_5.js"></script>
 	</header>
 	
 	<body>
@@ -19,7 +20,7 @@
 		</div>
 		<div id = "timer">
 			<!--this is for the timer to go when the game starts-->
-			<p></p>
+			<p>You have 30 seconds to guess the price! Click "START THE CLOCK" to begin!</p>
 		</div>
 		<div class = "input-group">
 			<h2 class = "label">Put your guess in here!</h2>
