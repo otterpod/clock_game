@@ -17,7 +17,7 @@
 		<div id = "stats">
 			<h3>Games Won: </h3>
 			<h3>Games Lost: </h3>
-			<h3>Win/Loss Ratio: </h3>
+			<h3>Win Percentage: </h3>
 			<h3>Total Games Played: </h3>
 		</div>
 		<div id = "buttons">
