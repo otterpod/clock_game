@@ -1,0 +1,26 @@
+<?php
+$path = $_SERVER['REQUEST_URI'];
+$method = $_SERVER['REQUEST_METHOD'];
+
+if($path == '/play')
+	require('/p5/play.php');
+elseif($path == '/results'){
+	require('p5/results.php)
+	$max = //max amount from database
+	$min = //min amount from database
+	$price = random($min,$max);
+	
+	$choice = POST['choice']//user choice session
+	if($choice > $price)
+		$result = "too high";
+	elseif($choice < $price)
+		$result = "too low";
+	elseif($choice == $price)
+		$result = "you won!"
+    //stop timer
+    //disable submit button
+	else
+		//error
+
+	echo json_encode($result); 
+}
