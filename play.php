@@ -18,8 +18,8 @@
 		<div id = "buttons">
 			<button class = "btn" id = "getPrize">GET PRIZE</button> <button class = "btn" onclick = startClock();>START THE CLOCK</button>
 		</div>
+		<p id="temp"></p> 
 		<div id = "timer">
-			<!--this is for the timer to go when the game starts-->
 			<p>You have 30 seconds to guess the price! Click "START THE CLOCK" to begin!</p>
 		</div>
 		<div class = "input-group">
