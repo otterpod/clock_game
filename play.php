@@ -16,7 +16,7 @@
 			<h1>The Clock Game</h1>
 		</div>
 		<div id = "buttons">
-			<button class = "btn" id = "getPrize">GET PRIZE</button>
+			<button class = "btn" id = "getPrize">GET PRIZE</button> <button class = "btn" onclick = startClock();>START THE CLOCK</button>
 		</div>
 		<div id = "timer">
 			<!--this is for the timer to go when the game starts-->
