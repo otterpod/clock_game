@@ -4,6 +4,7 @@
 	 12/06/18 */
 var secLeft;
 var intervalID;
+var enabled = true;
 	 
 window.onload = function()
 {
@@ -21,19 +22,29 @@ function startClock()
 	
 function countDown()
 {
-	var elem = document.getElementById('timer');
-	
-	if(secLeft == -1)
+	if(enabled == true)
 	{
-		alert("Time is out! Game over!");
-		clearTimeout(intervalID);	
+		var elem = document.getElementById('timer');
+
+		if(secLeft == -1)
+		{
+			alert("Time is out! Game over!");
+			clearTimeout(intervalID);	
+		}
+
+		else
+		{
+			elem.innerHTML = secLeft + ' seconds left!';
+			secLeft--;
+		}
 	}
-	
-	else
-	{
-		elem.innerHTML = secLeft + ' seconds left!';
-		secLeft--;
-	}
+}
+
+function youWon()
+{
+	clearTimeout (intervalID);
+	alert("You Won!");
+	enabled = false;
 }
 
 $(document).ready(function(){
