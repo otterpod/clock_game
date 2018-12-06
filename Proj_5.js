@@ -54,3 +54,19 @@ $(document).ready(function(){
         });
     });
 });
+
+function ComparePrice()
+	{
+	if(input.value==rand)
+	{
+	youWon();
+	}
+	else if(input.value>rand)
+	{
+	alert("lower");
+	}
+	else if(input.value<rand)
+	{
+	alert("higher");
+	}
+	}
