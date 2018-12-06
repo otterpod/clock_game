@@ -23,7 +23,7 @@
 			<h3>Total Games Played: </h3>
 		</div>
 		<div id = "buttons">
-			<button class = "btn" onclick = "location.href = 'play.html'" type = "button">RETURN TO GAME</button>
+			<button class = "btn" onclick = "location.href = 'index.php'" type = "button">RETURN TO GAME</button>
 		</div>
 	</body>
 </html>
