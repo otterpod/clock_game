@@ -2,7 +2,9 @@
 	 Project 5
 	 Clock Game
 	 12/06/18 -->
-	 
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang = "en">
 	<header>
