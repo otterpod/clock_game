@@ -17,14 +17,8 @@
                 $min_price = $row['min_price'];
                 $max_price = $row['max_price'];
                 $url = $row['image_url'];
-                echo $name;
-                echo '';
-        echo $description;
-        echo '';
-        echo $$min_price;
-        echo '';
-        echo $max_price;
-
+               
+                echo $url;
 
 ?>
 
