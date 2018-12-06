@@ -19,6 +19,22 @@
 			<button class = "btn" id = "getPrize">GET PRIZE</button> <button class = "btn" onclick = startClock();>START THE CLOCK</button>
 		</div>
 		<p id="temp"></p> 
+		<script type="text/javascript">
+		//testing ajax below
+		$(play.php).ready(function(){
+			$(document).click(function(){
+				$.ajax({
+				type: 'POST',
+				url: 'play.php',
+				success: function(data){
+					alert(data);
+					$("p").text(data)
+					}
+				});
+			});
+		});
+
+		</script>
 		<div id = "timer">
 			<p>You have 30 seconds to guess the price! Click "START THE CLOCK" to begin!</p>
 		</div>
