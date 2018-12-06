@@ -43,7 +43,9 @@
 		</div>
 		<div class = "input-group">
 			<h2 class = "label">Put your guess in here!</h2>
-			<input name = "guess" type = "number" step = "1" min = "0" pattern = "\d+"/> <!--javascript-->
+			<form name = "guess" id = "guess" method = "post">
+				<input name = "guess" type = "number" step = "1" min = "0" pattern = "\d+"/>
+			</form>
 		</div>
 		<div id = "buttons">
 			<button class = "btn" id = "enter">ENTER</button> <button class = "btn" id = "replay" onclick = "location.href = 'index.php'">PLAY AGAIN</button>
