@@ -2,6 +2,9 @@
 	 Project 5
 	 Clock Game
 	 12/06/18 -->
+<?php
+	session_start();
+?>
 	 
 <!DOCTYPE html>
 <html lang = "en">
@@ -43,7 +46,7 @@
 			<input name = "guess" type = "number" step = "1" min = "0" pattern = "\d+"/> <!--javascript-->
 		</div>
 		<div id = "buttons">
-			<button class = "btn" id = "enter">ENTER</button> <button class = "btn" id = "replay" onclick = "location.href = 'play.php'">PLAY AGAIN</button>
+			<button class = "btn" id = "enter">ENTER</button> <button class = "btn" id = "replay" onclick = "location.href = 'index.php'">PLAY AGAIN</button>
 		</div>
 		<div id = "output">
 			<textarea id = "outputBox" type = "text" readonly></textarea>
